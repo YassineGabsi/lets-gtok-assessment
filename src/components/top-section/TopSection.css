@@ -1,6 +1,7 @@
 .top-section {
     /*background: url('../../assets/images/slider-bg2.jpg') no-repeat fixed center center;*/
-    height: 500px;
+    height: calc(100vh - 60px);
+    flex-direction: column;
 }
 
 .svg-container {
@@ -11,13 +12,13 @@
     z-index: -1;
 }
 
-svg path {
+.svg path {
     transition: 0.1s;
 }
 
-svg:hover path {
-    d: path("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");
-}
+/*.svg:hover path {*/
+/*    d: path("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");*/
+/*}*/
 
 .card-top-section {
     border: 15px;
@@ -26,6 +27,7 @@ svg:hover path {
     padding: 10px;
     border-radius: 15px;
 }
+
 .particles-alignment {
     position: absolute;
     top: 0;
@@ -36,4 +38,15 @@ svg:hover path {
 
 .img-top-section {
     max-height: 100px;
+}
+
+.top-tag {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.top-tags-wrapper {
+    position: absolute;
+    bottom: 0;
 }

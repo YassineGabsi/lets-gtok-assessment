@@ -3,7 +3,7 @@ import './TopSection.css'
 import Particles from 'react-particles-js';
 import emoticon from '../../assets/images/emoticon.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import {faHeart, faUserCheck, faHandPointUp, faShare} from '@fortawesome/free-solid-svg-icons'
 
 function TopSection() {
     useEffect(() => {
@@ -42,10 +42,11 @@ function TopSection() {
 
     });
     return (
-        <div className=" top-section d-flex align-items-center justify-content-center text-center">
+        <div className=" top-section d-flex align-items-center justify-content-center text-center" style={{position: 'relative'}}>
             <div className="card-top-section mx-auto col-md-4 container" style={{zIndex: '50'}}>
                 <img className="img-fluid img-top-section my-3" src={emoticon} alt=""/>
-                <hr className="mx-auto" style={{width: '80%', marginBottom: '-15px', marginTop: '40px', color: '#6930db'}}/>
+                <hr className="mx-auto"
+                    style={{width: '80%', marginBottom: '-15px', marginTop: '40px', color: '#6930db'}}/>
                 <FontAwesomeIcon icon={faHeart} size="2x" style={{color: '#6930db'}}/>
                 <h1 className="my-3 font-weight-bold">Share your feelings </h1>
                 <h5 className="my-3">Without being judged </h5>
@@ -176,6 +177,22 @@ function TopSection() {
                                }
                            }
                        }/>
+            <div className="col-md-4 mt-4 top-tags-wrapper">
+                <div className="d-flex align-items-center justify-content-center">
+                    <div className="mr-5">
+                        <FontAwesomeIcon icon={faHandPointUp} size="2x" style={{color: '#ffffff'}}/>
+                        <p className="top-tag">• Join •</p>
+                    </div>
+                    <div className="mx-5">
+                        <FontAwesomeIcon icon={faShare} size="2x" style={{color: '#ffffff'}}/>
+                        <p className="top-tag">• Share •</p>
+                    </div>
+                    <div className="ml-5">
+                        <FontAwesomeIcon icon={faUserCheck} size="2x" style={{color: '#ffffff'}}/>
+                        <p className="top-tag">• Feel Relief •</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     );
