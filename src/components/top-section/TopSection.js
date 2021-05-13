@@ -2,6 +2,9 @@ import React, {useEffect} from 'react';
 import './TopSection.css'
 import Particles from 'react-particles-js';
 import emoticon from '../../assets/images/emoticon.png'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
 function TopSection() {
     useEffect(() => {
         (function () {
@@ -40,11 +43,13 @@ function TopSection() {
     });
     return (
         <div className=" top-section d-flex align-items-center justify-content-center text-center">
-            <div className="card-top-section mx-auto col-md-4">
-                <img className="img-fluid img-top-section my-2" src={emoticon} alt=""/>
-                <hr className="mx-auto" style={{width: '80%'}}/>
+            <div className="card-top-section mx-auto col-md-4 container" style={{zIndex: '50'}}>
+                <img className="img-fluid img-top-section my-3" src={emoticon} alt=""/>
+                <hr className="mx-auto" style={{width: '80%', marginBottom: '-15px', marginTop: '40px', color: '#6930db'}}/>
+                <FontAwesomeIcon icon={faHeart} size="2x" style={{color: '#6930db'}}/>
                 <h1 className="my-3 font-weight-bold">Share your feelings </h1>
                 <h5 className="my-3">Without being judged </h5>
+                <button className="button-primary-custom">Share your feelings</button>
             </div>
             <div className="svg-container">
                 <svg viewBox="0 0 800 400" className="svg">
