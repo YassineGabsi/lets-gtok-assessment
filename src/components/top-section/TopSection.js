@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './TopSection.css'
 import Particles from 'react-particles-js';
 import emoticon from '../../assets/images/emoticon.png'
@@ -6,43 +6,9 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart, faUserCheck, faHandPointUp, faShare} from '@fortawesome/free-solid-svg-icons'
 
 function TopSection() {
-    useEffect(() => {
-        (function () {
-            // Variables
-            let $curve = document.getElementById("curve");
-            let last_known_scroll_position = 0;
-            let defaultCurveValue = 350;
-            let curveRate = 3;
-            let ticking = false;
-            let curveValue;
 
-            function scrollEvent(scrollPos) {
-                if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
-                    curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate);
-                    $curve.setAttribute(
-                        "d",
-                        "M 800 500 Q 400 " + curveValue + " 0 500 L 0 0 L 800 0 L 800 300 Z"
-                    );
-                }
-            }
-
-            window.addEventListener("scroll", function (e) {
-                last_known_scroll_position = window.scrollY;
-
-                if (!ticking) {
-                    window.requestAnimationFrame(function () {
-                        scrollEvent(last_known_scroll_position);
-                        ticking = false;
-                    });
-                }
-
-                ticking = true;
-            });
-        })();
-
-    });
     return (
-        <div className=" top-section d-flex align-items-center justify-content-center text-center" style={{position: 'relative'}}>
+        <div className="top-section d-flex align-items-center justify-content-center text-center" style={{position: 'relative'}}>
             <div className="card-top-section mx-auto col-md-4 container" style={{zIndex: '50'}}>
                 <img className="img-fluid img-top-section my-3" src={emoticon} alt=""/>
                 <hr className="mx-auto"
@@ -51,12 +17,6 @@ function TopSection() {
                 <h1 className="my-3 font-weight-bold">Share your feelings </h1>
                 <h5 className="my-3">Without being judged </h5>
                 <button className="button-primary-custom">Share your feelings</button>
-            </div>
-            <div className="svg-container">
-                <svg viewBox="0 0 800 800" className="svg">
-                    <path id="curve" fill="#6930db" d="M 800 500 Q 400 350 0 500 L 0 0 L 800 0 L 800 300 Z">
-                    </path>
-                </svg>
             </div>
             <Particles className="particles-alignment"
                        params={
