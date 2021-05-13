@@ -21,7 +21,7 @@ function TopSection() {
                     curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate);
                     $curve.setAttribute(
                         "d",
-                        "M 800 300 Q 400 " + curveValue + " 0 300 L 0 0 L 800 0 L 800 300 Z"
+                        "M 800 500 Q 400 " + curveValue + " 0 500 L 0 0 L 800 0 L 800 300 Z"
                     );
                 }
             }
@@ -52,8 +52,8 @@ function TopSection() {
                 <button className="button-primary-custom">Share your feelings</button>
             </div>
             <div className="svg-container">
-                <svg viewBox="0 0 800 400" className="svg">
-                    <path id="curve" fill="#6930db" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+                <svg viewBox="0 0 800 800" className="svg">
+                    <path id="curve" fill="#6930db" d="M 800 500 Q 400 350 0 500 L 0 0 L 800 0 L 800 300 Z">
                     </path>
                 </svg>
             </div>
