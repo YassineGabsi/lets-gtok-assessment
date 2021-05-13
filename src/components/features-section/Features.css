@@ -2,6 +2,25 @@
     border-radius: 15px;
     box-shadow: rgba(25, 28, 31, 0.08) 0 14px 32px, rgba(25, 28, 31, 0.04) 0 8px 16px, rgba(25, 28, 31, 0.04) 0 -1px 0;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #f3effd;
+}
+.feature-tag {
+    /*margin-left: 80px;*/
+    padding: 5px 15px;
+    border-radius: 7px;
+    background-color: #f3effd;
+    display: inline-block;
+    float: right;
+}
+
+.feature-card-text {
+    padding: 5px 10px;
+    text-align: start;
+}
+
+.feature-card-time {
+    opacity: 0.6;
+    padding: 5px 10px;
+    text-align: start;
 }

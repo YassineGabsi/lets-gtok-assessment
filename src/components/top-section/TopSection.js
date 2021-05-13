@@ -14,7 +14,7 @@ function TopSection() {
                 <hr className="mx-auto"
                     style={{width: '80%', marginBottom: '-15px', marginTop: '40px', color: '#6930db'}}/>
                 <FontAwesomeIcon icon={faHeart} size="2x" style={{color: '#6930db'}}/>
-                <h1 className="my-3 font-weight-bold">Share your feelings </h1>
+                <h1 className="my-3 font-weight-bold big-title">Share your feelings </h1>
                 <h5 className="my-3">Without being judged </h5>
                 <button className="button-primary-custom">Share your feelings</button>
             </div>
