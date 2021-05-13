@@ -1,0 +1,7 @@
+.feature-card {
+    border-radius: 15px;
+    box-shadow: rgba(25, 28, 31, 0.08) 0 14px 32px, rgba(25, 28, 31, 0.04) 0 8px 16px, rgba(25, 28, 31, 0.04) 0 -1px 0;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #f3effd;
+}
