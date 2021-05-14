@@ -40,6 +40,14 @@ app.post("/contact", jsonParser, async (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message;
+
+    await firestore()
+        .collection("Emails")
+        .add({
+            name: name,
+            email: email,
+            message: message,
+        });
     const mailToHost = {
         from: name,
         to: "gabsiyassine@gmail.com",
