@@ -35,3 +35,15 @@
     position: absolute;
     bottom: 0;
 }
+
+.heart-icon, .hr-icon-animation {
+    animation: animateHeart 10s infinite;
+}
+
+@keyframes animateHeart {
+    0% {color: #6930db;}
+    25%{color: firebrick;}
+    50%{color: #6930db;;}
+    75%{color: firebrick;}
+    100% {color: #6930db;}
+}

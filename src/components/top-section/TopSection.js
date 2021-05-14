@@ -11,9 +11,9 @@ function TopSection() {
         <div className="top-section d-flex align-items-center justify-content-center text-center" style={{position: 'relative'}}>
             <div className="card-top-section mx-auto col-md-4 container" style={{zIndex: '50'}}>
                 <img className="img-fluid img-top-section my-3" src={emoticon} alt=""/>
-                <hr className="mx-auto"
+                <hr className="mx-auto hr-icon-animation"
                     style={{width: '80%', marginBottom: '-15px', marginTop: '40px', color: '#6930db'}}/>
-                <FontAwesomeIcon icon={faHeart} size="2x" style={{color: '#6930db'}}/>
+                <FontAwesomeIcon className="heart-icon" icon={faHeart} size="2x" style={{color: '#6930db'}}/>
                 <h1 className="my-3 font-weight-bold big-title">Share your feelings </h1>
                 <h5 className="my-3">Without being judged </h5>
                 <button className="button-primary-custom">Share your feelings</button>
