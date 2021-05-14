@@ -5,6 +5,7 @@ import React from "react";
 import TopSection from "./components/top-section/TopSection";
 import Features from "./components/features-section/Features";
 import WhyLetsGtok from "./components/why-lets-gtok/WhyLetsGtok";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TopSection/>
       <Features/>
       <WhyLetsGtok/>
+      <Contact/>
     </div>
   );
 }
