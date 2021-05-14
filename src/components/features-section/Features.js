@@ -6,7 +6,7 @@ function Features() {
     return(
         <div className="text-center mt-5 features-section">
             <h3>A community to spread <span style={{color: '#6930db', fontWeight: 'bold'}}>Positivity</span></h3>
-            <hr/>
+            <hr className="mx-auto" style={{width: '80%'}}/>
             <div className="mt-4 container">
                 <div className="text-start px-3">
                     <h2 className="big-title">Share feeling</h2>

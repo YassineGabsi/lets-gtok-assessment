@@ -1,0 +1,20 @@
+.why-us-tag {
+    background-color: #ffffff;
+    padding: 15px;
+    color: #642fd1;
+    font-weight: bold;
+    box-shadow: rgba(25, 28, 31, 0.08) 0 14px 32px, rgba(25, 28, 31, 0.04) 0 8px 16px, rgba(25, 28, 31, 0.04) 0 -1px 0;
+    border-radius: 10px;
+    display: table;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.why-us-tag:hover {
+    background-color: #642fd1;
+    color: #ffffff;
+    transition: 0.3s all ease-in-out;
+
+
+}
