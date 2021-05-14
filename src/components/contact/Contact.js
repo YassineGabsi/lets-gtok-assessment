@@ -46,7 +46,7 @@ function Contact() {
         };
         axios({
             method: "POST",
-            url: "http://localhost:5000/contact",
+            url: "https://us-central1-lunaprise-dev.cloudfunctions.net/lets_gtok/contact",
             data: data,
         }).then((response) => {
             if (response.data.status === "sent") {
