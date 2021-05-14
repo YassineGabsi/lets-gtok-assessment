@@ -24,3 +24,17 @@
     padding: 5px 10px;
     text-align: start;
 }
+
+.features-section {
+    background: rgb(105,48,219);
+    background: linear-gradient(354deg, rgba(105,48,219,1) 48%, rgba(255,255,255,1) 48%);
+}
+
+
+@media screen and (max-width: 990px) and (min-width: 768px){
+    .feature-tag {
+        display: block;
+        float: left;
+        margin: 10px;
+    }
+}
