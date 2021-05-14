@@ -1,0 +1,23 @@
+.contact-input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #6930db;
+    color: #000000;
+    font-weight: bold;
+    transition: 0.3s all ease-in-out;
+}
+
+.contact-input:focus {
+    background-color: #6930db;
+    color: #ffffff;
+    transition: 0.3s all ease-in-out;
+}
+
+.contact-input::placeholder {
+    transition: 0.3s all ease-in-out;
+}
+
+.contact-input:focus::placeholder {
+    color: #ffffff;
+    transition: 0.3s all ease-in-out;
+}
