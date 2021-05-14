@@ -19,9 +19,6 @@ function Contact() {
                             <input className="contact-input col-10" type="text" placeholder="Email"/>
                         </label>
                         <label className="col-12 text-center my-3">
-                            <input className="contact-input col-10" type="text" placeholder="Subject"/>
-                        </label>
-                        <label className="col-12 text-center my-3">
                             <textarea className="contact-input col-10" rows="4" cols="50" placeholder="Message"/>
                         </label>
 

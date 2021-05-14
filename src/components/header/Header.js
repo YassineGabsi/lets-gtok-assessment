@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import './Header.css'
 function Header() {
     return(
-        <header>
             <Navbar bg="light" expand="lg" className="sticky-top">
                 <Navbar.Brand className="col-6 px-4" href="#home">Lets Gtok</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -17,7 +16,6 @@ function Header() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </header>
 
     );
 }
