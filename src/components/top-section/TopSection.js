@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './TopSection.css'
 import Particles from 'react-particles-js';
 import emoticon from '../../assets/images/emoticon.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart, faUserCheck, faHandPointUp, faShare} from '@fortawesome/free-solid-svg-icons'
+import AOS from "aos";
 
 function TopSection() {
 
+
     return (
         <div className="top-section d-flex align-items-center justify-content-center text-center" style={{position: 'relative'}}>
-            <div className="card-top-section mx-auto col-md-4 container" style={{zIndex: '50'}}>
+            <div className="card-top-section mx-auto col-md-4 container" data-aos="zoom-in" data-aos-delay="300" style={{zIndex: '50'}}>
                 <img className="img-fluid img-top-section my-3" src={emoticon} alt=""/>
                 <hr className="mx-auto hr-icon-animation"
                     style={{width: '80%', marginBottom: '-15px', marginTop: '40px', color: '#6930db'}}/>
@@ -139,17 +141,17 @@ function TopSection() {
                        }/>
             <div className="col-md-4 mt-4 top-tags-wrapper">
                 <div className="d-flex align-items-center justify-content-center">
-                    <div className="mr-5">
+                    <div className="mr-5" data-aos="zoom-in" data-aos-delay="200">
                         <FontAwesomeIcon icon={faHandPointUp} size="2x" style={{color: '#ffffff'}}/>
-                        <p className="top-tag">• Join •</p>
+                        <p className="top-tag">Join</p>
                     </div>
-                    <div className="mx-5">
+                    <div className="mx-5" data-aos="zoom-in" data-aos-delay="300">
                         <FontAwesomeIcon icon={faShare} size="2x" style={{color: '#ffffff'}}/>
-                        <p className="top-tag">• Share •</p>
+                        <p className="top-tag">Share</p>
                     </div>
-                    <div className="ml-5">
+                    <div className="ml-5" data-aos="zoom-in" data-aos-delay="400">
                         <FontAwesomeIcon icon={faUserCheck} size="2x" style={{color: '#ffffff'}}/>
-                        <p className="top-tag">• Feel Relief •</p>
+                        <p className="top-tag">Feel Relief</p>
                     </div>
                 </div>
             </div>
