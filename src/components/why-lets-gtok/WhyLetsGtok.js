@@ -10,7 +10,7 @@ function WhyLetsGtok() {
         <div className="container my-4">
             <h3 className="text-center my-5" data-aos="fade-down">Why <span style={{color: '#6930db', fontWeight: 'bold'}}>Lets Gtok?</span></h3>
             <div className="row">
-                <div className="col-md-6 my-2" data-aos="fade-up-right">
+                <div className="col-md-6 my-2" data-aos="fade-down">
                     <img className="img-fluid" src={about} alt=""/>
                 </div>
                 <div className="col-md-6 mt-2">

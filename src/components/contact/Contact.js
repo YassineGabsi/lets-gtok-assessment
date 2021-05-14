@@ -28,7 +28,7 @@ function Contact() {
                         </button>
 
                     </div>
-                    <div className="col-md-6" data-aos="fade-left">
+                    <div className="col-md-6" data-aos="fade-down">
                         <img className="img-fluid" src={contact} alt=""/>
                     </div>
                 </div>

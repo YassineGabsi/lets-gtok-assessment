@@ -14,7 +14,7 @@
 .why-us-tag:hover {
     background-color: #642fd1;
     color: #ffffff;
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out !important;
 
 
 }
